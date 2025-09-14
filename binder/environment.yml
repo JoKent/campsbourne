@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python
   - numpy
-   - pip
+  - pip
   - pip:
     - pandas
     - geopandas
