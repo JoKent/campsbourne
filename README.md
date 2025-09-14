@@ -14,20 +14,18 @@ You can either clone this project to your repo and run the python notebook there
 Because github has a file size limit and the gazetteer file is very large you will need to download the abridged version of the [GB1900 Gazetteer](https://www.visionofbritain.org.uk/data/), open the zip file and place the csv in the data folder. The other two files in the download relating to usage are already in the folder for information 
 
 #### OSM data file
-Because the Campsbourne Estate is in London, the project used a data file for London, this is simply to give a smaller dataset to select the data from. This data file was created using the geodesk gol tool.  
-
-** To find the relevant surrounding area name ** go to [OpenStreetMap](http://www.openstreetmap.org/) and find the area of interest, right click on it then select Query features. In the list of features, look under the Enclosing features heading and chose one at an appropriate level.
+Because the Campsbourne Estate is in London, the project used a data file for London, this is simply to give a smaller dataset to select the data from. This data file was created using the geodesk gol tool. Details of how to create this are in the section on creating an OSM file below 
+First, you'll need to get the tool from the geodesk site
+**To find the relevant surrounding area name** go to [OpenStreetMap](http://www.openstreetmap.org/) and find the area of interest, right click on it then select Query features. In the list of features, look under the Enclosing features heading and chose one at an appropriate level.
 
 ### Variables to amend
 
 The program takes a set of co-ordinates, in this case the boundary of the Campsbourne Estate, but these coordinates can be amended to select another area.  
-** To find the relevant coordinates ** go to [OpenStreetMap](http://www.openstreetmap.org/) and find the top left point of the area of interest, right click on it then select Show address. The coordinates shown will be for the north and west points, repeat this in the bottom right for the south and east points  
+**To find the relevant coordinates** go to [OpenStreetMap](http://www.openstreetmap.org/) and find the top left point of the area of interest, right click on it then select Show address. The coordinates shown will be for the north and west points, repeat this in the bottom right for the south and east points  
 
 Filter area OSM data file name. Once you have created the relevant OSM data file using the geodesk gol tool, and added it to the data folder, you will need to amend the name in the code if it is not london  
  
 Once you have amended the coordinates and filter area as required, adjust the project url to the appropriate one for your project  
-
-
 
 ### Running the code
 
@@ -38,6 +36,14 @@ Amend the variables in the second code block, or run with the existing ones if y
 
 Run each block of code in order by pressing the 'play' icons next to the code blocks, the resulting data set in Linked Places format will be output into the binder folder  
 
-** You must copy down this file before closing the window, binder resets when it is closed, so you will lose the file if you do not save it  ** 
+**You must copy down this file before closing the window, binder resets when it is closed, so you will lose the file if you do not save it** 
 
+## Creating an osm file
 
+The following steps have been successfully run in Windows using the command line, you may need to amend these for other operating systems  
+First you'll need to get the GeoDesk gol CLI from the [geodesk website](https://www.geodesk.com/) and go to the download page   
+Then you'll need the .osm.pbf country or county file from an OSM mirror site like this one: [UK Country files](https://download.geofabrik.de/europe/united-kingdom.html), which has files for each county in England and a single file for all of Scotland or Wales, get the smallest file you can to keep processing speeds down  
+Place the .osm.pbf file in the same folder as the unzipped gol-tool folder
+Then you'll need to build the file on the command line using the build command for example  
+``.\gol-tool-1.0.2\bin\gol build wales wales-latest.osm.pbf``  
+Move the new .gol file to the data folder
