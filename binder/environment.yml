@@ -1,4 +1,4 @@
-name: mapmetadata
+name: campsbourne
 channels:
   - conda-forge
 dependencies:
