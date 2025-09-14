@@ -9,7 +9,7 @@ Because the gazetteer only covers the British Isles, it will only work with plac
 This code was originally written for a project focussed on the Campsbourne Estate in London, so default settings are for that location
 
 ## How to use the code
-You can either clone this project to your repo and run the python notebook there or you can use the binder link to run the project in a browser window. If you use the binder link, please be aware that any changes you make will be lost if you close the window. In either case you will need to add some files and amend some variables before running the code.
+You can either clone this project to your repo and run the python notebook there or you can use the binder link to run the project in a browser window. If you use the binder link, please be aware that it tends to fall over occasionally if you don't have a good connection and that any changes you make will be lost if this happens or you close the window. In either case you will need to add some files and amend some variables before running the code.
 
 ## Files to add
 
@@ -39,12 +39,16 @@ Once you have amended the coordinates and filter area as required, adjust the pr
 
 The code is in a jupyter notebook, which you can run using the binder link below  
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JoKent/campsbourne/HEAD?urlpath=%2Fdoc%2Ftree%2Fstreet-extract-to-linked-places.ipynb)   
-
+  
+Upload the files as required, in binder you may need to click on the file icon to view the folder structure  
+  
 Amend the variables in the second code block, or run with the existing ones if you just want to get the default results set for the campsbourne estate  
 
-Run each block of code in order by pressing the 'play' icons next to the code blocks, the resulting data set in Linked Places format will be output into the binder folder  
-
-**You must copy down this file before closing the window, binder resets when it is closed, so you will lose the file if you do not save it** 
+Run each block of code in order by pressing the 'play' icons next to the code blocks, or in binder using the play key at the top while selecting the block, or hitting shift and enter.
+  
+The resulting data set in Linked Places format will be output into the project folder    
+  
+**If you're using binder, you must copy down this file before closing the window, binder resets when it is closed, so you will lose the file if you do not save it** 
 
 ## Creating an osm file
 
