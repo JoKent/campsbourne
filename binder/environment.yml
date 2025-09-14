@@ -1,0 +1,15 @@
+name: mapmetadata
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pip
+  - pip:
+    - datetime
+    - geopandas
+    - geodesk
+    - json
+    - pandas
+    - reverse_geocoder
+    
