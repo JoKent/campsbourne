@@ -10,6 +10,5 @@ dependencies:
     - geopandas
     - datetime
     - geodesk
-    - json
     - reverse_geocoder
     
