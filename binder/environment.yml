@@ -4,10 +4,12 @@ channels:
 dependencies:
   - python
   - numpy
-  - datetime
-  - geopandas
-  - geodesk
-  - json
-  - pandas
-  - reverse_geocoder
+   - pip
+  - pip:
+    - pandas
+    - geopandas
+    - datetime
+    - geodesk
+    - json
+    - reverse_geocoder
     
